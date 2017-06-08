@@ -40,7 +40,7 @@ def plot_confusion_matrix(cm, classes,normalize=False,title='Confusion matrix',
     plt.show()
 
 def plot_roc(fpr, tpr, auc):
-    color_palette = ['darkorange', 'red', 'blue', 'green', 'purple'
+    color_palette = ['darkorange', 'red', 'blue', 'green', 'purple',
                     'yellow', 'grey', 'aqua', 'pink', 'darkblue']
     plt.figure()
     plt.plot([0,1], [0,1], color='navy', lw=2, linestyle='--')
@@ -56,7 +56,7 @@ def plot_roc(fpr, tpr, auc):
     plt.show()
 
 def plot_pr(prec, rec, auc):
-    color_palette = ['darkorange', 'red', 'blue', 'green', 'purple'
+    color_palette = ['darkorange', 'red', 'blue', 'green', 'purple',
                     'yellow', 'grey', 'aqua', 'pink', 'darkblue']
     plt.figure()
     for i in range(len(prec)):
